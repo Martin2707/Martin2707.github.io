@@ -1,0 +1,73 @@
+---
+layout: page
+title: "Martin Catindig"
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Martin Catindig</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="images/MartinCatindig-Logo.png">
+  </head>
+  <body>
+    <main>
+        <section>
+            <p id="typing-line">My name is Martin.</p>
+        </section>
+        <section class="fade-in">
+            <p>I study Management Information Systems<br> in Ateneo de Manila University.</p>
+        </section>
+        <section class="fade-in">
+            <p>I'm a Project Head of Ateneo Gabay,</p>
+            <p>Creative Director of Ateneo MISA,</p>
+        </section>
+        <section class="fade-in">
+            <p>
+            And a <em>results-driven, people-oriented</em><br>student-leader.
+            </p>
+        </section>
+        <section class="fade-in">  
+            <div class="social-links">
+                <a
+                href="https://www.linkedin.com/in/romulo-martin-catindig-35138628b/"
+                target="_blank"
+                aria-label="LinkedIn"
+                class="social-icon linkedin-icon"
+                >
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    aria-hidden="true"
+                >
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.266 2.37 4.266 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.123 2.062 2.062 0 0 1 0 4.123zM6.814 20.452H3.861V9h2.953v11.452z"/>
+                </svg>
+                </a>
+                <span class="separator">/</span>
+                <p class="social-icon email-link">
+                romulomartin.catindig@gmail.com 
+                </p>
+            </div>
+        </section>
+    </main>
+    <script>
+        const el = document.getElementById("typing-line");
+        const text = el.textContent;
+        el.textContent = "";
+
+        let index = 0;
+        const speed = 45; // typing speed (ms)
+
+        function type() {
+            if (index < text.length) {
+            el.textContent += text.charAt(index);
+            index++;
+            setTimeout(type, speed);
+            }
+        }
+        type();
+    </script>
+  </body>
+</html>
