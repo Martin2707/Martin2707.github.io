@@ -97,3 +97,24 @@ p {
     0%, 50%, 100% { opacity: 1; }
     25%, 75% { opacity: 0; }
 }
+
+@media (max-width: 600px) {
+  body {
+    font-size: 20px; 
+    margin-top: 5em;
+  }
+
+  .social-links {
+    display: flex;
+    flex-direction: column; 
+    gap: 0.5em; 
+  }
+
+  .separator {
+    display: none;
+  }
+
+  .email-link {
+    font-size: 1em; 
+  }
+}
